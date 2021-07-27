@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">‏
+</head>
+
+<body>
+    <p>Elisheva Dayan 208027102</p>
+    <h1>Best Hits</h1>
+    <h3>Artists List</h3>
+    <button class="new_artist_btn">Add Artist</button>
+    <table></table>
+
+    <div class="form-add_a" id="art_form_div">
+        <form class="form-container" id="art_form">
+            <h2>New Artist</h2>
+
+            
+            <label for="id"><b>ID</b></label>
+            <input id="id" type="text" placeholder="write id of artist" name="id" required>
+
+            <label for="name"><b>Name</b></label>
+            <input id="name" type="text" placeholder="write artist name" name="name" required>
+            
+            <label for="birth_year"><b>Birth Year</b></label>
+            <input id="birth_year" type="text" placeholder="write the birth year of the artist" name="birth_year" required>
+
+            <label for="link_profile_picture"><b>Link Profile Picture</b></label>
+            <input id="link_profile_picture" type="text" placeholder="put a link of a picture font:https:// ..." name="link_profile_picture" required>
+
+            <button type="submit" class="btn">CreatArtist</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+        <div id="artists_list"></div>
+
+        <button class="new_artist_btn">Add Artist</button>
+
+</body>
+
+</html>
